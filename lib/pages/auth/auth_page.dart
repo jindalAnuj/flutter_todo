@@ -8,6 +8,9 @@ import 'package:flutter_todo/widgets/helpers/message_dialog.dart';
 import 'package:flutter_todo/scoped_models/app_model.dart';
 import 'package:flutter_todo/widgets/ui_elements/rounded_button.dart';
 
+/**
+ * login page
+ */
 class AuthPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {

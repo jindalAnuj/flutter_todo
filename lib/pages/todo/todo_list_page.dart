@@ -13,6 +13,7 @@ import 'package:flutter_todo/widgets/todo/shortcuts_enabled_todo_fab.dart';
 class TodoListPage extends StatefulWidget {
   final AppModel model;
 
+  //constructor with AppModel
   TodoListPage(this.model);
 
   @override

@@ -51,6 +51,7 @@ class _TodoAppState extends State<TodoApp> {
   @override
   Widget build(BuildContext context) {
     return ScopedModel<AppModel>(
+      //scopedModel for passing model in inner widgets
       model: _model,
       child: MaterialApp(
         title: Configure.AppName,
@@ -59,6 +60,7 @@ class _TodoAppState extends State<TodoApp> {
           accentColor: Colors.blue,
           brightness: _isDarkThemeUsed ? Brightness.dark : Brightness.light,
         ),
+        //routes for navigation base on condition , routes accept map
         routes: {
           '/': (BuildContext context) =>
               _isAuthenticated ? TodoListPage(_model) : AuthPage(),
